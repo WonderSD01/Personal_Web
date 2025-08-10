@@ -495,10 +495,14 @@
             grid-template-columns: 1fr 2fr;
             gap: 4rem;
             align-items: center;
+            justify-items: center;
         }
 
         .about-image {
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
         }
 
         .about-image img {
@@ -508,6 +512,8 @@
             object-fit: cover;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
+            display: block;
+            margin: 0 auto;
         }
 
         .about-image img:hover {
